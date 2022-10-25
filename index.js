@@ -19,6 +19,18 @@ Aşağıdakileri yapın:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+const surucuYasi=18
+if('surucuYasi' > 18) {
+  console.log('true')
+}; if (condition) 
+{
+  
+} else
+{
+  
+} {console.log('false')};
+
+
 
 
 
@@ -33,6 +45,15 @@ Aşağıdakileri yapınız:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+var miro= 10
+var iro= 15
+miro > iro
+var miro=12
+console.log (miro)= 12
+
+
+
+
 
 
 
@@ -49,6 +70,9 @@ Aşağıdakileri yapın:
    İPUCU: Number metoduna bakabilirsin
 */
 
+const ilksayı= '1999'
+'1999'==1999
+console.log ('1999')==1999
 
 
 
@@ -61,9 +85,10 @@ Aşağıdakileri yapın:
    3. a ve b'yi çarpıp, sonucu dönün
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+function carpma(/*buraya kodunu yazabilirsin*/);
+let a=20; let b=30;
+function çarpma (a,b) {console.log(a*b);}
+
 
 
 
@@ -76,10 +101,15 @@ Aşağıdakileri yapın:
  2. Gelen değeri kullanarak köpeğin yaşını hesaplayın (insanlarda 1 yıl köpeklerde 7 yıla denk gelir)
  3. Hesaplanan köpeğin yaşını dönün.
  */
+ 
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+
+function  kopeginYasi(insanyili){
+var kopeginYasi=insanyili*7;
+return kopeginYasi;
 }
+console.log (kopeginYasi(3));
+
 
 
 
@@ -90,7 +120,9 @@ function kopeginYasi(/*buraya kodunu yazabilirsin*/){
 Aşağıdakileri yapın:
 1. Bilgisayarın seçimini rastgele oluşturacağımız bir değişken tanımlayın (bu fonksiyon içinde yaratılmalı)
 2. Math.random'ı kullanarak bilgisayarın seçimini oluşturun (Math.random 0-1 arasında bir değer verecek)
-3. Bu rastgele değeri "Taş", "Kağıt" veya "Makas"a dönüştüren bir koşul oluşturun
+3. Bu rastgele değeri "Taş", "Kağıt" veya "Makas"a dönüştüren bir koşul oluşturun 
+
+
 
 Aşağıdakileri oyun isimli fonksiyonu kullanarak yapın.
 1. 2 parametre alın: oyuncunun tercihini alan bir string değer: "Taş", "Kağıt" veya "Makas" 
@@ -104,9 +136,8 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yapın.
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
 
-function oyun(oyuncu, bilgisayar){
-  /*buraya kodunu yazabilirsin*/
-}
+
+
 
 
 
@@ -153,8 +184,14 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/){
-      /*buraya kodunu yazabilirsin*/
+function cocukSarkisi(BesMaymun) {
+ let cocukSarkisi=5
+{5} ("kucuk maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!")
+}
+{ 
+
+
+  
 }
 
 
@@ -173,9 +210,34 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
-/*buraya kodunu yazabilirsin*/
-}
+
+
+function notHesapla(not){
+
+  if(100>=not && not>=90){
+    console.log("A aldın");
+  } else if (89>=not && not>=80){
+    console.log("B aldın");
+   } else if (79>=not && not>=70) {
+    console.log("C aldın") ;
+     } else if (69>=not && not>=60) {
+    console.log("D aldın");
+     }
+     else if (59>=not);
+     {console.log ("F aldın");
+    }
+    return notText
+  }
+  console.log(notHesaplama(75));
+
+
+
+
+      
+
+
+
+
 
 
 
