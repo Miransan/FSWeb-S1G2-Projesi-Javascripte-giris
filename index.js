@@ -19,16 +19,13 @@ Aşağıdakileri yapın:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-const surucuYasi=18
-if('surucuYasi' > 18) {
-  console.log('true')
-}; if (condition) 
-{
+
+let surucuYasi = 19
+if (surucuYasi< 18) {console.log('False');} else if (surucuYasi > 18) { console.log('True');}
+
   
-} else
-{
   
-} {console.log('false')};
+
 
 
 
@@ -45,11 +42,11 @@ Aşağıdakileri yapınız:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-var miro= 10
-var iro= 15
-miro > iro
-var miro=12
-console.log (miro)= 12
+let birinciDeger= 10;
+let ikinciDegeri= 15;
+if (birinciDeger < ikinciDegeri) { console.log ('birinciDegerikinciDegeridenbuyuktur');}
+
+
 
 
 
@@ -70,10 +67,10 @@ Aşağıdakileri yapın:
    İPUCU: Number metoduna bakabilirsin
 */
 
-const ilksayı= '1999'
-'1999'==1999
-console.log ('1999')==1999
+let str="1999";
+let num = parseInt(str);
 
+console.log(num);
 
 
 /*
@@ -85,9 +82,17 @@ Aşağıdakileri yapın:
    3. a ve b'yi çarpıp, sonucu dönün
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/);
-let a=20; let b=30;
-function çarpma (a,b) {console.log(a*b);}
+function carpma(/*buraya kodunu yazabilirsin*/)
+{};
+
+let a = 20;
+let b = 30;
+
+function carpma(a,b){
+  return a * b;
+}
+
+console.log(carpma(a,b));
 
 
 
@@ -108,7 +113,7 @@ function  kopeginYasi(insanyili){
 var kopeginYasi=insanyili*7;
 return kopeginYasi;
 }
-console.log (kopeginYasi(3));
+console.log (kopeginYasi(10));
 
 
 
@@ -154,7 +159,10 @@ Aşağdakileri milDonusturucu fonksiyonunu kullanarak yapın:
 function milDonusturucu(/*buraya kodunu yazabilirsin*/){
   /*buraya kodunu yazabilirsin*/
 }
-
+function milDonusturucu(km){
+  return km * 0.621371;
+}
+console.log(milDonusturucu(2));
 
 
 //Görev 4b - Santimetreden Feet
@@ -168,7 +176,10 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
   /*buraya kodunu yazabilirsin*/
 }
-
+function feetDonusturu(cm){
+  return cm * 30.48; 
+ }
+ console.log(feetDonusturu(20));
 
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımızı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
@@ -184,15 +195,15 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(BesMaymun) {
- let cocukSarkisi=5
-{5} ("kucuk maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!")
+function cocukSarkisi(sayi){
+  let sarkı=" küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!";
+  return sayi + sarkı;
 }
-{ 
-
-
-  
+let sayi;
+for (sayi=5;sayi>0;sayi--) {
+  console.log(cocukSarkisi(sayi));
 }
+
 
 
 /* Görev 6 : Not Hesaplayıcı */
@@ -213,23 +224,24 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
 
 
 function notHesapla(not){
-
-  if(100>=not && not>=90){
-    console.log("A aldın");
-  } else if (89>=not && not>=80){
-    console.log("B aldın");
-   } else if (79>=not && not>=70) {
-    console.log("C aldın") ;
-     } else if (69>=not && not>=60) {
-    console.log("D aldın");
-     }
-     else if (59>=not);
-     {console.log ("F aldın");
-    }
-    return notText
+  if (not>=90 && not <=100) {
+    return "A aldın";
   }
-  console.log(notHesaplama(75));
-
+  else if (not>=80 && not <=89) {
+    return "B aldın";
+  }
+  else if (not>=70 && not<=79) {
+    return "C aldın";
+  }
+  else if (not>=60 && not<=69) {
+    return "D aldın";
+  } else {
+    return "F aldın";
+  }
+  }
+  
+  console.log(notHesapla(55));
+  
 
 
 
